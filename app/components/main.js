@@ -61,7 +61,7 @@ export default function Main () {
                 </p>
 
                 <div className="mt-6 flex" >
-                  <div
+                  <button
                     onClick={() => ScollToSection("Project")}
                     className="btn px-6 py-2 border border-green-400 text-green-400 rounded hover:bg-green-400 hover:text-[#0a1630] hover:cursor-pointer transition"
                     data-aos="fade-up"
@@ -69,7 +69,7 @@ export default function Main () {
                     data-aos-once="true"
                   >
                     to the next
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
