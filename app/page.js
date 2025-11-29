@@ -1,5 +1,5 @@
 "use client"
-import { ScollToSection } from "@/utils/scroll"
+import { ScollToSection } from "../utils/scroll"
 import Last from "./components/last";
 import Main from "./components/main"
 import Project from "./components/project"
@@ -17,9 +17,9 @@ export default function Home() {
         RELLZ
         </a>
        </div>
-       <div className="flex flex-row items-center justify-end ">
+       <div className="flex flex-row items-center justify-center ">
         <button 
-        className="btn  w-20 h-12 hover:cursor-pointer" 
+        className="btn flex hover:cursor-pointer text-white" 
         onClick={() => ScollToSection("fullpage")}
         >
           Home

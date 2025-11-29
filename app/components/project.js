@@ -51,7 +51,7 @@ export default function Project() {
 
   return (
    <>
-      <div id="Project" className="h-screen max-md:h-auto flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 p-5 bg-[#0a1630]">
+      <div id="Project" className="min-h-screen max-lg:h-auto flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 p-5 bg-[#0a1630]">
         <div className="flex flex-col items-center mt-10 col-span-1" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
           <h2 className="text-white text-3xl"> Analystic</h2>
           <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 mt-12 space-x-4">

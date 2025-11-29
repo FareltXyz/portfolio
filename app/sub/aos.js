@@ -1,8 +1,9 @@
 "use client"
 import AOS from "aos";
+import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
-export default function Aos() {
+export function Aos() {
     useEffect(() => {
      AOS.init({
       offset: 200,
@@ -12,5 +13,7 @@ export default function Aos() {
       once: true
     });
   }, [])
+
+    return null;
 
 }

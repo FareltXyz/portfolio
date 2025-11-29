@@ -1,10 +1,9 @@
 "use client"
-import Aos from "../sub/aos"
 import Link from "next/link"
 import dynamic from 'next/dynamic'
 import Typer from "../sub/typewriter"
 import Image from "next/image"
-import { ScollToSection } from "@/utils/scroll"
+import { ScollToSection } from "../../utils/scroll"
 import Waves from "../sub/wave"
 
 import AOS from "aos";
@@ -21,25 +20,25 @@ export default function Main () {
 
     return (
         <>
-         <main id="fullpage" className="snap-start relative min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-[#0a1630] px-6">
-          <div className="flex items-center justify-center h-screen max-md:mt-10">
-            <div className="flex flex-row space-x-10">
+         <main id="fullpage" className="overflow-y-auto relative shrink-0 min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-[#0a1630] px-6">
+          <div className="flex items-center justify-center min-h-screen shrink-0 my-20">
+            <div className="flex flex-row md:space-x-10">
 
               <div className="left-6 top-1/4 hidden lg:flex bottom-1/4 border-l-2 border-gray-500"></div>
 
-              <div className="max-w-2xl text-left">
-                <span className="text-green-400 font-mono mb-2">
+              <div className="max-w-2xl min-h-max text-left">
+                <span className="text-green-400 max-md:text-base font-mono mb-2">
 
                  <Typer />  
                 </span>
         
 
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight" data-aos="fade-right" data-aos-duration="1500">
+                <h1 className="text-3xl max-w-full h-auto lg:text-5xl font-extrabold text-white leading-tight" data-aos="fade-right" data-aos-duration="1500">
                   Selamat Datang! <br />
                   <span className="text-gray-300">Nama saya Farel, Salken</span>
                 </h1>
 
-                <p className="text-gray-400 mt-4" data-aos="fade-right" data-aos-duration="1500">
+                <p className="text-gray-400 text-xl max-md:text-base min-w-0 max-w-max mt-4" data-aos="fade-right" data-aos-duration="1500">
                   Bukan siapa-siapa sih. tapi cuma orang yang gabut menjelajahi dunia
                   online. Bahasa pemrograman yang saya pelajarin antara lain{" "}
                   <span className="text-white">Python, JavaScript, HTML-CSS</span>, dan
@@ -56,7 +55,7 @@ export default function Main () {
                   yang keren ya!
                 </p>
 
-               <p className="text-gray-300 mt-4 text-lg" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+               <p className="text-gray-300 mt-4 max-md:text-base text-lg max-w-max" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                   Salam kenal, jangan ragu buat ngoding bareng!
                 </p>
 
@@ -68,13 +67,13 @@ export default function Main () {
                     data-aos-duration="1500"
                     data-aos-once="true"
                   >
-                    to the next
+                    next?
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="lg:flex justify-center h-screen items-center hidden">
+          <div className="lg:flex justify-center min-h-screen items-center hidden">
             <div className="absolute right-6 top-1/4 hidden flex-col justify-between items-center h-[70vh] lg:flex">
               <div className="h-3/5 border-1 border-gray-500 z-10"></div>
               <div className="relative  bottom-10 flex flex-col items-center justify-center gap-[2px] text-gray-300">

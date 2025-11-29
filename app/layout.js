@@ -1,5 +1,4 @@
-import Aos from "./sub/aos";
-import 'aos/dist/aos.css';
+import { Aos } from "./sub/aos";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 const geistSans = Geist({
@@ -23,9 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} box-border min-w-md antialiased h-auto overflow-y-auto overflow-x-auto`}
       >
-        
+        <Aos />
         {children}
       </body>
     </html>
