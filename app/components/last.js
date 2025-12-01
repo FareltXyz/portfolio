@@ -29,7 +29,7 @@ export default function Last() {
         <>
             <div className="min-h-screen py-5 shrink-0 bg-[#0a1630] grid grid-cols-1 lg:grid-cols-2 px-5 ">
                 <div className="flex mt-20 flex-col justify-center items-center min-w-max ">
-                    <div className="w-3/4 max-w-xl shrink-1 mt-6 pt-10 p-8 space-y-5 lg:space-y-10 items-center bg-[#1b283f] border border-[#ffffff1a] rounded-xl shadow-[#4d1192ca] shadow-2xl">
+                    <div className="w-3/4 max-w-xl shrink-1 mt-6 pt-10 p-8 space-y-5 lg:space-y-10 items-center bg-[#1b283f] border border-[#ffffff1a] rounded-xl shadow-[#4d1192ca] shadow-2xl"  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                         <h2 className="text-white font-extrabold text-3xl text-center">Get In Touch</h2>
                         <form onSubmit={webhook}>
                         <div className="flex flex-row max-md:flex-col justify-center gap-5 w-full">

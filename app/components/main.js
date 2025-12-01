@@ -39,24 +39,12 @@ export default function Main () {
                 </h1>
 
                 <p className="text-gray-400 text-xl max-md:text-base min-w-0 max-w-max mt-4" data-aos="fade-right" data-aos-duration="1500">
-                  Bukan siapa-siapa sih. tapi cuma orang yang gabut menjelajahi dunia
-                  online. Bahasa pemrograman yang saya pelajarin antara lain{" "}
-                  <span className="text-white">Python, JavaScript, HTML-CSS</span>, dan
-                  sekarang lagi ngedalami{" "}
-                  <span className="text-white">Next.js</span> buat bikin web yang gak
-                  cuma cakep tapi juga ngebut! <br />
-                  nantikan gw buat{" "}
-                  <a href="#projects"
-                  onClick={() => ScollToSection("Project")}
-                  className="text-green-400 underline"
-                  >
-                    project-project
-                  </a>{" "}
-                  yang keren ya!
+                  Bukan siapa-siapa. tapi hanya orang yang gabut menjelajahi dunia
+                  online.
                 </p>
 
-               <p className="text-gray-300 mt-4 max-md:text-base text-lg max-w-max" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-                  Salam kenal, jangan ragu buat ngoding bareng!
+               <p className="text-gray-300 max-md:text-base text-lg max-w-max" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+                  Salam kenal!
                 </p>
 
                 <div className="mt-6 flex" >
