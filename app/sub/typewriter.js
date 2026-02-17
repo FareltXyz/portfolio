@@ -12,7 +12,7 @@ export default function typer() {
                 typewriter.typeString('Selamat datang di website ku 😎')
                 .pauseFor(700)
                 .deleteAll()
-                .typeString('Gamer, Software engineering, fullstack developer')
+                .typeString('Gamer, Cyber Security Specialist, Computer & Network Technicians, Fullstack Developer')
                 .pauseFor(500)
                 .typeString('<br \\> Kurang keren apalagi coba 😎')
                 .pauseFor(500)
@@ -23,7 +23,7 @@ export default function typer() {
                 .typeString(', Hehe')
                 .deleteAll()
                 .typeString('Hobby?')
-                .typeString('<br \\> Nonton anime, ngegame, gambar, dll 👀')
+                .typeString('<br \\> Nonton anime, ngegame, coding, dll 👀')
                 .pauseFor(700)
                 .deleteAll()
                 .start();

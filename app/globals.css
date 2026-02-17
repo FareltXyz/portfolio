@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
@@ -35,4 +36,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
 }

@@ -1,113 +1,106 @@
-import { FaLink, FaCode, FaGlobe, FaShield } from "react-icons/fa6";
-export default function Project() {
-  
-  const analystic = [
-    {
-      name: "Visitor",
-      value: "0"
-    },
-    {
-      name: "Repository",
-      value: "0",
-    },
-    {
-      name: "Project",
-      value: "0"
-    },
-    {
-      name: "achievement",
-      value: "0"
-    }
-  ]
-  
-  const skill = [
+import { DiNodejs } from "react-icons/di"
+import ListProject from "../sub/listProject"
+import { FaArrowTrendUp, FaCertificate, FaBookBookmark, FaMedal, FaCode, FaGlobe, FaShield, FaCheck, FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+const analistikCard = [
+        { name: "Sertifikat", value: 3, icon: FaCertificate },
+        { name: "Repository", value: 12, icon: FaBookBookmark  },
+        { name: "Project", value: 3, icon: FaCode },
+        { name: "Achievement", value: 0, icon: FaMedal }
+    ]
+
+const project = [
+    { 
+        name: "Ai-Asli Ini", 
+        description: "sebuah website chatbot ai dengan model dari gemini",
+        image: "project1.png",
+        features: ["Dark Theme", "Fast Response", "Google Login Auth"],
+        program: [{ name: "Next.js", icon: "devicon-nextjs-plain"}, { name: "Tailwindcss", icon: "devicon-tailwindcss-original"}, { name: "HTML", icon: "devicon-html5-plain"}, { name: "Postcss", icon: "devicon-postcss-plain"}]
+     }
+]
+
+const skill = [
     {
       name: "Fullstack Developer",
       icon: FaCode,
-      description: "masih belajar"
+      description: "Mempelajari pengembangan aplikasi web secara menyeluruh, mulai dari perancangan antarmuka (frontend) hingga pengelolaan logika server dan database (backend)."
     },
     {
       name: "Networking",
       icon: FaGlobe,
-      description: "masih belajar"
+      description: "Mempelajari dasar jaringan komputer menggunakan simulasi Cisco Packet Tracer, meliputi konfigurasi server, DNS, email, serta perancangan topologi jaringan berbasis router dan switch."
     },
     {
       name: "Cyber Security",
       icon: FaShield,
-      description: "masih belajar"
+      description: "Mempelajari berbagai bidang keamanan siber, termasuk web exploitation, reverse engineering, digital forensics, cryptography, dan binary exploitation."
     }
   ]
 
-  const project = [
-    {
-      title: "Coming Soon!",
-      description: "Belum ada project wkwkw"
-    },
-    {
-      title: "Coming Soon!",
-      description: "Nothing"
-    }
-  ]
+export default function Project() {
+    return (
+        <>
+            <div id="Project" className="bg-[#0a1630] w-screen min-h-screen">
+                <div className="grid grid-cols-1 lg:grid-cols-2 ">
+                    <div className="flex flex-col-reverse md:flex-col items-center gap-y-12 p-3 py-14 px-8 mt-16"> 
+                        <div className="flex flex-col gap-y-4 bg-[#102a43] border border-[#334e68] py-5 px-6 rounded-lg w-full lg:max-w-xl" data-aos="fade-up" data-aos-duration="1500"> 
+                            <h1 className="text-white text-3xl font-bold inline-flex gap-4 my-3"><div className="bg-sky-800 p-1 rounded-sm"><FaArrowTrendUp className="text-sky-300"/></div> Analystic </h1>
+                            <div className="grid grid-cols-1 gap-y-4">
+                                {
+                                    analistikCard.map((data, i) => {
+                                        const Icon = data.icon
+                                        return (
 
-  return (
-   <>
-      <div id="Project" className="min-h-screen max-lg:h-auto flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-2 p-5 bg-[#0a1630]">
-        <div className="flex flex-col items-center mt-10 col-span-1" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
-          <h2 className="text-white text-3xl"> Analystic</h2>
-          <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 mt-12 space-x-4">
-            {analystic.map((data, i) => {
-              return(
-                <div key={i} className="w-32 h-32 flex flex-col  items-center space-y-3">
-                  <p className="text-lg text-white"> {data.name} </p>
-                  <p className="text-4xl text-white"> {data.value} </p>
+                                            <div key={i} className="bg-[#0a1929] border border-[#334e68] px-4  py-5 rounded-md">
+                                              <p className="text-white flex flex-row justify-between px-1.5">
+                                                <span className="inline-flex gap-4">
+                                                    <span className="bg-sky-500 p-1 rounded-sm"><Icon /></span>{data.name}
+                                                </span>
+                                                <span>
+                                                    {data.value}
+                                                </span>
+                                              </p>
+                                        </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-y-4 items-center">
+                            <div className="flex flex-col items-center">
+                                <h1 className="text-white text-3xl font-bold" data-aos="fade-down" data-aos-duration="1500">Keterampilan</h1>
+                                <p className="text-gray-300 text-lg font-semibold" data-aos="fade-down" data-aos-duration="1500">Skill Yang Saya Kuasai Saat Ini</p>
+                            </div>
+                            <div className="flex flex-col gap-y-4 w-full lg:max-w-xl" data-aos="fade-right" data-aos-duration="1500">
+                              {
+                                skill.map((data, i) => {
+                                    const Icons = data.icon
+                                    return (
+
+                                    <div key={i} className="flex flex-col gap-y-4 bg-[#102a43] border border-[#334e68] py-5 px-6 rounded-lg w-full lg:max-w-xl">
+                                        <h1 className="inline-flex gap-4 text-xl font-semibold text-white"><span className="p-1 rounded-md bg-radial from-fuchsia-500 to-violet-400"><Icons /></span>{data.name}</h1>
+                                        <div>
+                                            <p className="text-white">
+                                                {data.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                  )
+                                })
+                              }
+                            </div>
+                        </div>
+                    </div>
+                    <div className="max-lg:row-start-1 flex flex-col items-center gap-y-6 p-3 px-8">
+                        <div className="flex flex-col gap-y-5 w-full" data-aos="fade-down" data-aos-duration="1500">
+                            <h1 className="text-white text-3xl text-center font-bold">Project</h1>
+                            <div className="flex flex-col items-center gap-y-3 w-full">
+                                <ListProject amount={1}/>     
+                            </div>
+                        </div>
+                        <button className="px-7 py-4 bg-cyan-600 hover:bg-cyan-800 rounded-xl w-full lg:max-w-md text-white font-extrabold" data-aos="fade-right" data-aos-duration="1500" onClick={() => {window.location = "/projects"}}>Lihat Selengkapnya</button>
+                    </div>
                 </div>
-              )
-            })}
-          </div>
-        </div>
-        <div className="flex flex-col items center mt-10 row-span-2 not-lg:order-last" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
-          <h2 className="text-white text-3xl text-center font-bold"> Project </h2>
-            <div className="h-[75%] flex flex-col items-center space-y-3 mt-12">
-              {project.map((data, i) => {
-                return(
-                  <div key={i} className="w-[60%] h-48 not-md:w-[80%] grid grid-rows-4 grid-cols-4 p-5 bg-[#1b283f] border border-[#ffffff1a] border-solid rounded-2xl transition hover:-translate-x-5">
-                    <p className="text-2xl text-white col-span-4 row-span-1 h-3/4"> {data.title} </p>
-                    <p className="text-md text-gray-400 col-span-4 row-span-2"> {data.description} </p>
-                    <div className="flex flex-rows items-center justify-start col-span-3 row-span-1">
-                    
-                    </div>
-                    <div className="flex flex-row justify-end items-end col-span-1 row-span-1">
-                      <button className="text-white text-xl">
-                      <FaLink />  
-                      </button>
-                    </div>
-                  </div>
-                )
-              })}
             </div>
-        </div>
-        <div className="flex flex-col items-center max-md:w-full whitespace-nowrap max-md:h-auto mt-3 " data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-          <h2 className="text-white text-3xl text-center font-bold">Skills</h2>
-          <div className="flex flex-row right-2/4 space-x-6 w-max max-md:w-full mt-5 whitespace-nowrap max-md:overflow-x-scroll scrollbar-hide">
-            {skill.map((data, i) => {
-              const Icon = data.icon;
-
-              return(
-                <div key={i} className="h-48 w-[187px] mt-7 pt-4 pl-3 shrink-0 bg-[#1b283f] border border-[#ffffff1a] border-solid rounded-2xl transition hover:-translate-y-3"> 
-
-                  <p className="text-green-400 flex flex-col items-center justify-center text-md">
-                    <Icon className="text-3xl my-3"/>
-                    {data.name} 
-                  </p>
-                  <p className="text-gray-400 flex justify-center">
-                    {data.description}
-                  </p>
-                </div>
-              )
-            })}
-          </div>
-        </div> 
-      </div>
-   </>
-  );
+        </>
+    )
 }

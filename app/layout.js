@@ -1,5 +1,7 @@
 import { Aos } from "./sub/aos";
 import { Geist, Geist_Mono } from "next/font/google";
+import Providers from "./providers"
+
 import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,13 +22,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   
   return (
-    <html lang="en">
+    <>
+    <head>
+      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+    </head>
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} box-border min-w-md antialiased h-auto overflow-y-auto overflow-x-auto`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} box-border min-h-screen max-w-screen antialiased`}
+        > 
         <Aos />
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
+    </>
   );
 }
