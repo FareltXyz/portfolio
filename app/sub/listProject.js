@@ -32,7 +32,7 @@ export default function ListProject({amount}) {
             { project.map((data, i) => {
               return (
 
-                  <div  key={i} className="py-3 px-1.5 gap-4 flex flex-col bg-[#102a43] border border-[#334e68] rounded-md w-full lg:max-w-md">
+                  <div  key={i} className="py-3 px-1.5 gap-4 flex flex-col bg-[#102a43] border border-[#334e68] rounded-md w-full lg:max-w-md" data-aos="fade-up" data-aos-duration="1000">
                     <img src={data.image} className="p-2"/>
                     <div className="px-6">
                         <h1 className="text-2xl text-white font-bold">{data.name}</h1>

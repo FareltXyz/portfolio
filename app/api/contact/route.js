@@ -12,7 +12,6 @@ export async function POST(req) {
 
     const body = await req.json();
     const { name, email, message } = body;
-
     if (!name || !email || !message) {
       return Response.json(
         { success: false, error: "All fields are required" },

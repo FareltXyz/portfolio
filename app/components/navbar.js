@@ -1,10 +1,11 @@
 "use client"
 import { useState, useEffect } from "react"
+import { useTheme } from "next-themes"
 import { FaSun, FaMoon, FaBarsStaggered, FaRegCircleXmark, FaCode, FaHouse, FaCertificate, FaMedal, FaPhone } from "react-icons/fa6"
 export default function Navbar() {
     const [ open, setOpen ] = useState(false)
     const [ mount, setMount ] = useState(false)
-
+    const { theme, setTheme } = useTheme()
     useEffect(() => {
         setMount(true)
     }, [])
@@ -55,7 +56,7 @@ export default function Navbar() {
                    </div>
                    { /* Tema */ }
                    <div className="inline-flex text-white text-xl gap-6 items-center">
-                        <button><FaSun /></button>
+                        <button className={`transition-transform duration-1000 ${theme === "dark" ? "rotate-0" : "rotate-360"}`} onClick={() => { if (theme === "dark") { setTheme("light")} else { setTheme("dark")}}}>{ theme === "dark" ? <FaSun className="transition-all"/> : <FaMoon className="transition-all "/> }</button>
                         <button onClick={() => {setOpen(true)}} className="block lg:hidden"><FaBarsStaggered /></button>
                    </div>
                 </div>

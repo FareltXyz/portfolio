@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <head>
       <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
     </head>
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" class-theme="dark" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} box-border min-h-screen max-w-screen antialiased`}
         > 
