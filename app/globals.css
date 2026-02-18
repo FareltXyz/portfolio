@@ -41,3 +41,9 @@ body {
 button:hover {
   cursor: pointer;
 }
+
+.emoji {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  color: initial !important;
+}

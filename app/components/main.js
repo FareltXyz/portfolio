@@ -5,13 +5,13 @@ export default function Main() {
    
     return(
         <>
-            <div className="bg-[#0a1630] w-screen min-h-screen">
+            <div className="bg-[#f1f5f9] dark:bg-[#0a1630] w-screen min-h-screen transition-colors duration-500">
                 <div className="grid grid-cols-1 min-h-screen xl:grid-cols-2 pt-20">
                     <div className="flex flex-col justify-center p-5 px-8 h-full">
-                        <span className="text-green-400 text-sm md:text-lg max-w-md py-2" data-aos="fade-right" data-aos-duration="1500"> <Typer /></span>
-                        <h1 className="text-white text-2xl md:text-6xl font-bold" data-aos="fade-right" data-aos-duration="1500">Halo, Selamat Datang!</h1>
-                        <h2 className="text-gray-300 text-2xl md:text-6xl font-bold" data-aos="fade-right" data-aos-duration="1500">Nama Saya Farel, Salken</h2>
-                        <p className="text-gray-400 max-md:max-w-md text-lg md:text-xl my-4 flex flex-col gap-1.5" data-aos="fade-right" data-aos-duration="1500">
+                        <span className="dark:text-green-400 dark:bg-none from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent bg-linear-to-r  font-extrabold dark:font-normal text-sm md:text-lg max-w-md py-2" data-aos="fade-right" data-aos-duration="1500"> <Typer /></span>
+                        <h1 className="text-black dark:text-white text-2xl md:text-6xl font-bold" data-aos="fade-right" data-aos-duration="1500">Halo, Selamat Datang!</h1>
+                        <h2 className="text-gray-800 dark:text-gray-300 text-2xl md:text-6xl font-bold" data-aos="fade-right" data-aos-duration="1500">Nama Saya Farel, Salken</h2>
+                        <p className="text-gray-950 dark:text-gray-400 max-md:max-w-md text-lg md:text-xl my-4 flex flex-col gap-1.5" data-aos="fade-right" data-aos-duration="1500">
                             <span>
                                 Bukan siapa-siapa. tapi hanya orang yang gabut menjelajahi dunia
                                 online. 
@@ -24,20 +24,20 @@ export default function Main() {
                             </span>
                         </p>
                         <div className="grid grid-cols-2 gap-1.5 max-w-2xl gap-y-3 py-3 px-3 text-xs lg:text-base font-bold" data-aos="fade-right" data-aos-duration="1500">
-                            <div className="flex border border-blue-600 rounded-full px-5 py-1.5 w-fit max-md:order-3 max-md:col-span-2">
-                                <p className="text-blue-400">Computer & Network Technicians</p>
+                            <div className="flex border from-blue-600 via-indigo-600 to-cyan-600 bg-linear-to-r  border-transparent dark:border-blue-500 dark:bg-none  rounded-full px-5 py-1.5 w-fit max-md:order-3 max-md:col-span-2">
+                                <p className="text-white dark:text-blue-400">Computer & Network Technicians</p>
                             </div>
-                            <div className="flex border border-cyan-700 rounded-full px-5 py-1.5 w-fit">
-                                <p className="text-cyan-500">Cyber Security Specialist</p>
+                            <div className="flex border from-cyan-500 via-teal-500 to-emerald-500 bg-linear-to-r border-transparent dark:border-cyan-500 dark:bg-none rounded-full px-5 py-1.5 w-fit">
+                                <p className="text-white dark:text-cyan-400">Cyber Security Specialist</p>
                             </div>
-                            <div className="flex border border-emerald-700 rounded-full px-5 py-1.5 w-fit">
-                                <p className="text-emerald-400">Fullstack web dev</p>
+                            <div className="lex border from-rose-500 via-pink-500 to-fuchsia-500 bg-linear-to-r border-transparent dark:border-cyan-500 dark:bg-none rounded-full px-5 py-1.5 w-fit">
+                                <p className="text-white dark:text-emerald-400">Fullstack web developer</p>
                             </div>
                         </div>
                         <div className="mt-6 flex" >
                             <button
                             onClick={() => ScollToSection("Project")}
-                            className="btn px-6 py-2 border bg-transparent border-green-400 text-green-400 rounded hover:bg-green-400 hover:text-[#0a1630] hover:cursor-pointer transition"
+                            className="btn px-6 py-2 border bg-white hover:bg-gray-50 hover:text-gray-800 dark:bg-transparent border-gray-300 text-gray-950 shadow-sm shadow-gray-200 dark:shadow-none dark:border-green-400 dark:text-green-400 rounded dark:hover:bg-green-400 dark:hover:text-[#0a1630] hover:cursor-pointer transition"
                             data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-once="true"
